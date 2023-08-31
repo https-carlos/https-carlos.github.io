@@ -31,8 +31,9 @@ body {
     margin-left: auto;
 }
 
-.headerd p {
+.headerd a {
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .main {
