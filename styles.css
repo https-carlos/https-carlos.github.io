@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(40, 0, 133);
     margin: 0;
     padding: 0;
   
@@ -8,9 +7,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    
+    grid-template-columns: 1fr 1fr;;
+    grid-template-rows: auto auto;
 }
 
 .header {
@@ -18,11 +16,12 @@ body {
     background-color: aliceblue;
     display: flex;
     justify-content: space-between;
-    grid-column-end: 4;
     grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .headere p {
+    margin-left: 20px;
     font-size: 30px;
 }
 
@@ -37,23 +36,22 @@ body {
 }
 
 .main {
-    margin-top: 50px;
+    margin-top: 20vh;
     border-radius: 50px;
-    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
     text-align: center;
-    height: 700px;
-    background-color: rgba(118, 255, 248, 1)
 }
 
 .foto {
-    margin-top: 150px;
     width: 230px;
     height: 230px;
     border-radius: 500px;
 }
 
 .redes{
-  margin-top: 200px;
+  margin-top: 10vh;
 
 }
 
@@ -66,4 +64,18 @@ body {
 .name {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+}
+
+#left {
+    background-color: rgb(119, 0, 255);
+    grid-row-start: 2;
+    grid-column-start: 1;
+    min-height: 90vh;
+}
+
+#right {
+    background-color: rgb(65, 0, 117);
+    grid-row-start: 2;
+    grid-column-start: 2;
+    min-height: 90vh;
 }
